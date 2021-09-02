@@ -14,7 +14,7 @@
   <div class="form-group">
   <div class="field mt-3">
       <%= form.label :name, "Round Name" %>
-      <%= form.text_field :name, { class: "form-control mt-1" } %>
+      <%= form.text_field :name, class: "form-control mt-1", required: true %>
       <small id="nameHelp" class="form-text text-muted">This will be the name of the round you are about to play. Use something distinct so that it is easily referrable (something like a date and course).</small>
     </div>
   </div>

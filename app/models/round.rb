@@ -2,6 +2,8 @@ class Round < ApplicationRecord
     has_many :players
     after_initialize :init
 
+    validates :name, presence: true
+
     def init
         self.complete ||= false
     end
