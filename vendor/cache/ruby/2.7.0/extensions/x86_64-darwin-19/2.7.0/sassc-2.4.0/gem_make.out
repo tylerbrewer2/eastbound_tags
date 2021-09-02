@@ -1,5 +1,5 @@
 current directory: /Users/tylerbrewer/Desktop/repos/personal/eastbound_tags/vendor/cache/ruby/2.7.0/gems/sassc-2.4.0/ext
-/Users/tylerbrewer/.rbenv/versions/2.7.3/bin/ruby -I /Users/tylerbrewer/.rbenv/versions/2.7.3/lib/ruby/site_ruby/2.7.0 -r ./siteconf20210828-1834-17vmhw1.rb extconf.rb
+/Users/tylerbrewer/.rbenv/versions/2.7.3/bin/ruby -I /Users/tylerbrewer/.rbenv/versions/2.7.3/lib/ruby/site_ruby/2.7.0 -r ./siteconf20210901-8393-16i6yy0.rb extconf.rb
 creating Makefile
 
 current directory: /Users/tylerbrewer/Desktop/repos/personal/eastbound_tags/vendor/cache/ruby/2.7.0/gems/sassc-2.4.0/ext
@@ -77,4 +77,4 @@ linking shared-object sassc/libsass.bundle
 
 current directory: /Users/tylerbrewer/Desktop/repos/personal/eastbound_tags/vendor/cache/ruby/2.7.0/gems/sassc-2.4.0/ext
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20210828-1834-1v2xuq1/sassc
+/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20210901-8393-1vn5lyy/sassc

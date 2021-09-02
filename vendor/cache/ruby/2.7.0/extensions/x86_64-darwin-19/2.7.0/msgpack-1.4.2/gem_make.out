@@ -1,5 +1,5 @@
 current directory: /Users/tylerbrewer/Desktop/repos/personal/eastbound_tags/vendor/cache/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack
-/Users/tylerbrewer/.rbenv/versions/2.7.3/bin/ruby -I /Users/tylerbrewer/.rbenv/versions/2.7.3/lib/ruby/site_ruby/2.7.0 -r ./siteconf20210828-1834-1ykamro.rb extconf.rb
+/Users/tylerbrewer/.rbenv/versions/2.7.3/bin/ruby -I /Users/tylerbrewer/.rbenv/versions/2.7.3/lib/ruby/site_ruby/2.7.0 -r ./siteconf20210901-8393-ztjomx.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -53,4 +53,4 @@ linking shared-object msgpack/msgpack.bundle
 
 current directory: /Users/tylerbrewer/Desktop/repos/personal/eastbound_tags/vendor/cache/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20210828-1834-cil7kb/msgpack
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20210901-8393-1x38ag9/msgpack
