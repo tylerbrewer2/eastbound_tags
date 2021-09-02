@@ -1,0 +1,25 @@
+<%= form_with(model: round) do |form| %>
+  <% if round.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(round.errors.count, "error") %> prohibited this round from being saved:</h2>
+
+      <ul>
+        <% round.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+  <div class="field mt-3">
+      <%= form.label :name, "Round Name" %>
+      <%= form.text_field :name, { class: "form-control mt-1" } %>
+      <small id="nameHelp" class="form-text text-muted">This will be the name of the round you are about to play. Use something distinct so that it is easily referrable (something like a date and course).</small>
+    </div>
+  </div>
+
+  <div class="actions mt-3">
+    <%= form.submit 'Submit', class: "btn btn-primary " %>
+  </div>
+<% end %>

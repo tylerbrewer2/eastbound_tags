@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h3>In Progress Rounds</h3>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Date</th>
+      <th scope="col" colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rounds.where(complete: false).order(created_at: :desc).each do |round| %>
+      <tr>
+        <td><strong><%= round.name %></strong></td>
+        <td><%= round.created_at.strftime("%B %d, %Y") %></td>
+        <td><%= link_to 'View', round %></td>
+        <td><%= link_to 'Delete', round, method: :delete, data: { confirm: 'Are you sure? This is not a revertable action and will completely destroy the round.' }%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Round', new_round_path, {class: "btn btn-primary active"} %>
+
+<div class="mt-5">
+  <h3>Completed Rounds</h3>
+
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Date</th>
+        <th scope="col" colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @rounds.where(complete: true).order(created_at: :desc).each do |round| %>
+        <tr>
+          <td><strong><%= round.name %></strong></td>
+          <td><%= round.created_at %></td>
+          <td><%= link_to 'View', round %></td>
+          <td><%= link_to 'Delete', round, method: :delete, data: { confirm: 'Are you sure? This is not a revertable action and will completely destroy the round.' }%></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

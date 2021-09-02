@@ -1,0 +1,5 @@
+<h3>Editing <%= @player.name %></h3>
+
+<%= render 'form', player: @player %>
+
+<%= link_to 'Back', round_path(@player.round_id) %>
